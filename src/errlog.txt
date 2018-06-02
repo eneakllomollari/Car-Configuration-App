@@ -1,0 +1,40 @@
+[05/11/18 16:36:29] Invalid number of option set Power Moonroof
+[05/11/18 16:36:29] Null Pointer Exception
+[05/11/18 16:36:32] Invalid number of option set Power Moonroof
+[05/11/18 16:36:32] Null Pointer Exception
+[05/12/18 17:37:49] File Not Found Exception
+[05/12/18 17:38:05] File Not Found Exception
+[05/14/18 21:50:51] Base price negative
+[05/14/18 21:50:57] Null Pointer Exception
+[05/14/18 21:51:53] Base price negative
+[05/15/18 08:25:08] Base price negative
+[05/15/18 08:31:25] Invalid number of option set size
+[05/15/18 08:31:35] Base price negative
+[05/15/18 08:31:35] Invalid format error
+[05/15/18 08:36:57] Invalid number of option set size
+[05/15/18 08:36:59] Base price negative
+[05/15/18 08:36:59] Invalid format error
+[05/15/18 08:37:24] Invalid number of option set size
+[05/15/18 08:37:26] Base price negative
+[05/15/18 08:38:00] Invalid number of option set size
+[05/15/18 08:38:12] Invalid number of option set size
+[05/15/18 08:38:16] Base price negative
+[05/15/18 08:39:57] Invalid number of option set size
+[05/15/18 08:40:03] Base price negative
+[05/15/18 08:40:20] Invalid number of option set size
+[05/15/18 08:40:24] Invalid format error
+[05/15/18 08:40:27] Invalid number of option set size
+[05/15/18 08:40:30] Base price negative
+[05/15/18 08:45:35] Invalid number of option set size
+[05/15/18 08:45:38] Base price negative
+[05/15/18 08:45:52] Invalid number of option set size
+[05/15/18 17:37:57] Base price negative
+[05/15/18 17:54:17] File Not Found Exception
+[05/15/18 17:59:07] File Not Found Exception
+[05/15/18 18:00:21] File Not Found Exception
+[05/15/18 18:00:27] File Not Found Exception
+[05/15/18 18:04:10] File Not Found Exception
+[05/15/18 18:05:15] File Not Found Exception
+[05/15/18 18:05:25] File Not Found Exception
+[05/15/18 18:07:22] File Not Found Exception
+[05/15/18 19:41:52] Invalid format error
