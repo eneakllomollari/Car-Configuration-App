@@ -54,7 +54,6 @@ public class EditOption extends ProxyAutomotive implements Runnable {
 			this.printCarPrice(make, model, year);
 			break;
 		case 3:
-
 			this.printOptionChoice(make, model, year, input.get(3));
 			break;
 		case 4:
