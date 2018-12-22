@@ -1,0 +1,6 @@
+The index.jsp file has a block of code that populates the LHM with the Automobile data. 
+
+In order for that to work on other machines other than mine, one has to change the file paths that I have hard coded in. The files are found in the src folder.
+
+In order to run the program run http://localhost:8080/Lab_6
+this will load index.jsp which contains the form and populates the LHM and after the form is submitted it will go to Servlet2.java which is in the servlet package and it will print the configuration.

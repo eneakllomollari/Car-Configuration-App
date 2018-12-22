@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import adapter.ProxyAutomotive;
 import exception.AutoException;
 
-public class EditOption extends ProxyAutomotive implements Runnable {
+public class EditOption extends ProxyAutomotive implements Runnable, GlobalCons {
 	private int opnum;
 	private int threadno;
 	private ArrayList<String> input;
@@ -17,16 +17,22 @@ public class EditOption extends ProxyAutomotive implements Runnable {
 		this.threadno = threadno;
 		this.thread = new Thread(this);
 	}
+
 	public void start() {
 		thread.start();
 	}
+
 	public void run() {
 		try {
-			System.out.printf("Starting operation %d!\n", this.opnum);
-			System.out.printf("\nStarting thread #%d!\n", this.threadno);
+			if (GlobalCons.threadDebug) {
+				System.out.printf("Starting operation %d!\n", this.opnum);
+				System.out.printf("\nStarting thread #%d!\n", this.threadno);
+			}
 			this.ops(opnum, input);
-			System.out.printf("Stopping operation #%d!\n", this.opnum);
-			System.out.printf("Stopping thread #%d!\n", this.threadno);
+			if (threadDebug) {
+				System.out.printf("Stopping operation #%d!\n", this.opnum);
+				System.out.printf("Stopping thread #%d!\n", this.threadno);
+			}
 		} catch (AutoException ae) {
 			ae.fix(ae.getErrorno());
 		}
@@ -54,6 +60,7 @@ public class EditOption extends ProxyAutomotive implements Runnable {
 			this.printCarPrice(make, model, year);
 			break;
 		case 3:
+
 			this.printOptionChoice(make, model, year, input.get(3));
 			break;
 		case 4:
