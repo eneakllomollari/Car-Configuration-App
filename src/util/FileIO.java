@@ -16,14 +16,13 @@ import exception.AutoException;
 import model.Automobile;
 
 public class FileIO {
-	@SuppressWarnings("resource")
+
 	public Automobile buildAuto(String fname) throws AutoException {
 		Automobile a = new Automobile();
-		BufferedReader buff = null;
-		FileReader fR = null;
+
 		try {
-			fR = new FileReader(fname);
-			buff = new BufferedReader(fR);
+			FileReader fR = new FileReader(fname);
+			BufferedReader buff = new BufferedReader(fR);
 			boolean eof = false;
 			boolean DEBUG = false;
 			int i = 0;
@@ -63,7 +62,7 @@ public class FileIO {
 		} catch (FileNotFoundException e) {
 			throw new AutoException(3, "File Not Found Exception");
 		} catch (IOException e) {
-			e.printStackTrace();
+			throw new AutoException(4, "IO Exception");
 		} catch (NoSuchElementException e) {
 			throw new AutoException(11, "Invalid format error");
 		}
@@ -94,28 +93,38 @@ public class FileIO {
 		return a;
 	}
 
-	public Automobile buildAuto(Properties props) {
-		Automobile auto = new Automobile();
-		auto.setMake(props.getProperty("CarMake"));
-		auto.setModel(props.getProperty("CarModel"));
-		auto.setYear(props.getProperty("CarYear"));
-		auto.setBasePrice(Float.parseFloat(props.getProperty(("CarBasePrice"))));
-		auto.setOpSetSize(Integer.parseInt(props.getProperty("CarOptionSetCount")));
-		auto.setChoiceSize(Integer.parseInt(props.getProperty("CarOptionSetCount")));
-		for (int i = 0; i < auto.getOpSet().size(); i++) { // i is option set index
+	public Automobile buildAutoFromProps(String fname) {
+		Automobile a = new Automobile();
+		Properties props = new Properties();
+		FileInputStream in;
+		try {
+			in = new FileInputStream(fname);
+			props.load(in); // loads the entire file in memory
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		a.setMake(props.getProperty("CarMake")); // this is how a property is read.similar to hashtable
+		a.setModel(props.getProperty("CarModel"));
+		a.setYear(props.getProperty("CarYear"));
+		a.setBasePrice(Float.parseFloat(props.getProperty(("CarBasePrice"))));
+		a.setOpSetSize(Integer.parseInt(props.getProperty("CarOptionSetCount")));
+		for (int i = 0; i < a.getOpSet().size(); i++) {
 			String opsetname = props.getProperty("OptionSet" + Integer.toString(i + 1));
 			int opsetsize = Integer.parseInt(props.getProperty("OptionSetSize" + Integer.toString(i + 1)));
-			auto.setoptsetname(i, opsetname);
-			auto.setOptionSize(i, opsetsize);
-			for (int k = 0; k < opsetsize; k++) { // k is option index
+			a.setoptsetname(i, opsetname);
+			a.setOptionSize(i, opsetsize);
+			for (int k = 0; k < opsetsize; k++) {
 				char ch = chooseoptionchar(k);
 				String optionname = props.getProperty("OptionName" + Integer.toString(i + 1) + Character.toString(ch));
 				float price = Float.parseFloat(
 						props.getProperty("OptionPrice" + Integer.toString(i + 1) + Character.toString(ch)));
-				auto.setOption(i, k, optionname, price);
+				a.setOption(i, k, optionname, price);
 			}
 		}
-		return auto;
+		return a;
 	}
 
 	/**

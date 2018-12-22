@@ -11,8 +11,6 @@ import java.util.Date;
 import adapter.FixAuto;
 
 public class AutoException extends Exception implements FixAuto {
-	
-	private static final long serialVersionUID = 1L;
 	private int errorno;
 	private String errormsg;
 

@@ -1,12 +1,7 @@
 package adapter;
 
-import java.io.IOException;
-import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
-import java.util.Properties;
-import java.util.Set;
-
 import exception.AutoException;
 import model.Automobile;
 import util.FileIO;
@@ -17,14 +12,6 @@ public abstract class ProxyAutomotive {
 
 	public static LinkedHashMap<String, Automobile> getA() {
 		return a;
-	}
-
-	public int getAutoSize() {
-		return a.size();
-	}
-
-	public Automobile getAuto(String s) {
-		return a.get(s);
 	}
 
 	public static void setA(LinkedHashMap<String, Automobile> a) {
@@ -39,48 +26,21 @@ public abstract class ProxyAutomotive {
 		a.get(make + model + year).updateOptionPrice(optionname, newprice);
 	}
 
-	public ArrayList<String> getCarNames() {
-		ArrayList<String> arrlist = null;
-		if (a.size() == 0) {
-			return arrlist;
-		} else {
-			arrlist = new ArrayList<String>();
-			for (String s : a.keySet())
-				arrlist.add(s);
-
-			return arrlist;
-		}
-
-	}
-
-	public void buildAuto(String fname) {
+	public void buildAuto(String fname, String fileType) {
 		FileIO f = new FileIO();
 		Automobile temp = null;
 		try {
-			temp = f.buildAuto(fname);
+			if (fileType.equals("Properties")) {
+				temp = f.buildAutoFromProps(fname);
+			} else {
+				temp = f.buildAuto(fname);
+			}
+			String key = temp.getMake() + temp.getModel() + temp.getYear();
+			a.put(key, temp);
+
 		} catch (AutoException e) {
-			e.printStackTrace();
+			e.fix(e.getErrorno());
 		}
-		String key = temp.getMake() + temp.getModel() + temp.getYear();
-		a.put(key, temp);
-
-	}
-
-	public void sendAuto(ObjectOutputStream o, String key) {
-		Automobile auto = ProxyAutomotive.a.get(key);
-		try {
-			o.writeObject(auto);
-			o.flush();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-
-	public void addAutoToLHM(Properties p) {
-		FileIO f = new FileIO();
-		Automobile temp = f.buildAuto(p);
-		String key = temp.getMake() + temp.getModel() + temp.getYear();
-		a.put(key, temp);
 	}
 
 	public void printAuto(String make, String model, String year) {
@@ -104,21 +64,6 @@ public abstract class ProxyAutomotive {
 	public void printOptionPrice(String make, String model, String year, String option) {
 		System.out.printf("The price of your %s is $%.2f!\n", option,
 				a.get(make + model + year).getOptionChoicePrice(option));
-	}
-
-	public static ArrayList<String> getModels() {
-		ArrayList<String> arrlist = null;
-		if (a.size() == 0) {
-			return arrlist;
-		} else {
-			arrlist = new ArrayList<String>();
-			Set<String> set = a.keySet();
-			for (String s : set)
-				arrlist.add(s);
-
-			return arrlist;
-		}
-
 	}
 
 	public void operation(int opnum, int threadNo, ArrayList<String> input) {

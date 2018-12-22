@@ -1,0 +1,262 @@
+************************************************************************************************
+************************************************************************************************
+			Welcome to your garage!
+		
+Your cars are shown below!
+	1.Ford Focus Wagon ZTW
+	2.Mazda Protege 5
+Please enter your choice(1 or 2): 1
+
+Please choose between the operations below:
+	1.Print Auto
+	2.Print Car Price
+	3.Print Option Choice
+	4.Print Option Price
+	5.Update Option Price
+	6.Choose Option
+	7.Update Option Set Name
+	0.Exit
+Please enter your choice: 7
+
+Enter an option set and a new option set: Brakes
+New Brakes
+
+Please choose between the operations below:
+	1.Print Auto
+	2.Print Car Price
+	3.Print Option Choice
+	4.Print Option Price
+	5.Update Option Price
+	6.Choose Option
+	7.Update Option Set Name
+	0.Exit
+Please enter your choice: Starting operation 7!
+
+Starting thread #50!
+Stopping operation #7!
+Stopping thread #50!
+Starting operation 7!
+
+Starting thread #51!
+
+Option Set not found!
+Stopping operation #7!
+Stopping thread #51!
+//the above printouts are indicators that the threads are succesfully synchronized
+************************************************************************************************
+************************************************************************************************
+			Welcome to your garage!
+		
+Your cars are shown below!
+	1.Ford Focus Wagon ZTW
+	2.Mazda Protege 5
+Please enter your choice(1 or 2): 2
+
+Please choose between the operations below:
+	1.Print Auto
+	2.Print Car Price
+	3.Print Option Choice
+	4.Print Option Price
+	5.Update Option Price
+	6.Choose Option
+	7.Update Option Set Name
+	0.Exit
+Please enter your choice: 1
+Starting operation 1!
+Starting operation 1!
+
+Please choose between the operations below:
+	1.Print Auto
+	2.Print Car Price
+	3.Print Option Choice
+	4.Print Option Price
+	5.Update Option Price
+	6.Choose Option
+	7.Update Option Set Name
+	0.Exit
+Please enter your choice: 
+Starting thread #10!
+
+Starting thread #11!
+
+Make: Mazda
+Model: Protege 5
+Year: 2003
+Base price: $5000.00
+Option Set Name: Color
+
+Make: Mazda
+Model: Protege 5
+Year: 2003
+Base price: $5000.00
+Option Set Name: Color
+	Option Name: Fort Knox Gold Clearcoat Metallic
+	Price: $0.00
+
+	Option Name: Liquid Grey Clearcoat Metallic
+	Price: $0.00
+
+	Option Name: Infra-Red Clearcoat
+	Price: $0.00
+
+	Option Name: Grabber Green Clearcoat Metallic
+	Price: $0.00
+
+	Option Name: Sangria Red Clearcoat Metallic
+	Price: $0.00
+
+	Option Name: French Blue Clearcoat Metallic
+	Price: $0.00
+
+	Option Name: Twilight Blue Clearcoat Metallic
+	Price: $0.00
+
+	Option Name: CD Silver Clearcoat Metallic
+	Price: $0.00
+
+	Option Name: Pitch Black Clearcoat
+	Price: $0.00
+
+	Option Name: Cloud 9 White Clearcoat
+	Price: $0.00
+
+Option Set Name: Transmission
+	Option Name: automatic
+	Price: $0.00
+
+	Option Name: standard
+	Price: $-150.00
+
+Option Set Name: Brakes
+	Option Name: ABS
+	Price: $150.00
+
+	Option Name: ABS with Advance Trac
+	Price: $1599.00
+
+	Option Name: standard
+	Price: $0.00
+
+Option Set Name: Side Impact Airbag
+	Option Name: present
+	Price: $450.00
+
+	Option Name: notpresent
+	Price: $0.00
+
+Option Set Name: Power Moonroof
+	Option Name: present
+	Price: $300.00
+
+	Option Name: notpresent
+	Price: $0.00
+
+Stopping operation #1!
+Stopping thread #10!
+	Option Name: Fort Knox Gold Clearcoat Metallic
+	Price: $0.00
+
+	Option Name: Liquid Grey Clearcoat Metallic
+	Price: $0.00
+
+	Option Name: Infra-Red Clearcoat
+	Price: $0.00
+
+	Option Name: Grabber Green Clearcoat Metallic
+	Price: $0.00
+
+	Option Name: Sangria Red Clearcoat Metallic
+	Price: $0.00
+
+	Option Name: French Blue Clearcoat Metallic
+	Price: $0.00
+
+	Option Name: Twilight Blue Clearcoat Metallic
+	Price: $0.00
+
+	Option Name: CD Silver Clearcoat Metallic
+	Price: $0.00
+
+	Option Name: Pitch Black Clearcoat
+	Price: $0.00
+
+	Option Name: Cloud 9 White Clearcoat
+	Price: $0.00
+
+Option Set Name: Transmission
+	Option Name: automatic
+	Price: $0.00
+
+	Option Name: standard
+	Price: $-150.00
+
+Option Set Name: Brakes
+	Option Name: ABS
+	Price: $150.00
+
+	Option Name: ABS with Advance Trac
+	Price: $1599.00
+
+	Option Name: standard
+	Price: $0.00
+
+Option Set Name: Side Impact Airbag
+	Option Name: present
+	Price: $450.00
+
+	Option Name: notpresent
+	Price: $0.00
+
+Option Set Name: Power Moonroof
+	Option Name: present
+	Price: $300.00
+
+	Option Name: notpresent
+	Price: $0.00
+
+Stopping operation #1!
+Stopping thread #11!
+************************************************************************************************
+************************************************************************************************
+			Welcome to your garage!
+		
+Your cars are shown below!
+	1.Ford Focus Wagon ZTW
+	2.Mazda Protege 5
+Please enter your choice(1 or 2): 2
+
+Please choose between the operations below:
+	1.Print Auto
+	2.Print Car Price
+	3.Print Option Choice
+	4.Print Option Price
+	5.Update Option Price
+	6.Choose Option
+	7.Update Option Set Name
+	0.Exit
+Please enter your choice: 2
+
+Please choose between the operations below:
+	1.Print Auto
+	2.Print Car Price
+	3.Print Option Choice
+	4.Print Option Price
+	5.Update Option Price
+	6.Choose Option
+	7.Update Option Set Name
+	0.Exit
+Please enter your choice: Starting operation 2!
+Starting operation 2!
+
+Starting thread #10!
+
+Starting thread #11!
+The price of your 2003 Mazda Protege 5 is $5000.00!
+Stopping operation #2!
+Stopping thread #10!
+The price of your 2003 Mazda Protege 5 is $5000.00!
+Stopping operation #2!
+Stopping thread #11!
+************************************************************************************************
+************************************************************************************************
+
