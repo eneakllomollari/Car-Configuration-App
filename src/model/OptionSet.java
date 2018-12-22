@@ -8,9 +8,11 @@ import java.util.ArrayList;
  * @CWID 20303401
  */
 public class OptionSet implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
 	private String name;
 	private ArrayList<Option> op;
-	
+
 	protected String getName() {
 		return name;
 	}
@@ -39,8 +41,10 @@ public class OptionSet implements Serializable {
 
 	protected void print() {
 		System.out.printf("Option Set Name: %s\n", this.name);
-		for (int i = 0; i < this.op.size(); i++)
+		for (int i = 0; i < this.op.size(); i++) {
+			System.out.printf("%d. ", i + 1);
 			this.op.get(i).print();
+		}
 	}
 
 	protected Option findoption(String name) {

@@ -1,14 +1,15 @@
-/**
- * @author Enea Kllomollari
- * @CWID 20303401
- **/
 package model;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 
+/**
+ * @author Enea Kllomollari
+ * @CWID 20303401
+ **/
 public class Automobile implements Serializable {
 
+	private static final long serialVersionUID = 1L;
 	private float basePrice;
 	private String model;
 	private String make;
@@ -59,7 +60,7 @@ public class Automobile implements Serializable {
 			OptionSet ops = opSet.get(i);
 			if (ops.getName().equals(optionSetName)) {
 				Option o = ops.findoption(optionName);
-				choice.add(i,o);
+				choice.add(i, o);
 				return;
 			}
 		}
@@ -71,11 +72,11 @@ public class Automobile implements Serializable {
 			price += choice.get(i).getPrice();
 		return price += this.basePrice;
 	}
-	
+
 	public void setChoiceSize(int size) {
 		this.choice = new ArrayList<Option>(size);
-		for(int i = 0; i < size;i++)
-			this.choice.add(i,new Option());
+		for (int i = 0; i < size; i++)
+			this.choice.add(i, new Option());
 	}
 
 	public String getYear() {
@@ -220,6 +221,11 @@ public class Automobile implements Serializable {
 				this.basePrice);
 		for (int i = 0; i < this.opSet.size(); i++)
 			opSet.get(i).print();
+	}
+
+	public void printOpSet(String string) {
+		int index = this.findoptionset(string);
+		this.opSet.get(index).print();
 	}
 
 }

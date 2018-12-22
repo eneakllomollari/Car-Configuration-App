@@ -12,8 +12,8 @@ public class Driver4 {
 		String fname1 = "/home/enea/Documents/Java Workspace/Lab 3/src/Mazda Protege5";
 		String fname2 = "/home/enea/Documents/Java Workspace/Lab 3/src/Ford Wagon";
 		CreateAuto ca = new BuildAuto();
-		ca.buildAuto(fname2,"");
-		ca.buildAuto(fname1,"");
+		ca.buildAuto(fname2);
+		ca.buildAuto(fname1);
 		Scalable scale = new BuildAuto();
 
 		System.out.printf(

@@ -9,13 +9,13 @@ public class Driver3 {
 
 	public static void main(String[] args) {
 		/*
-		 * Scanner keyboard = new Scanner(System.in);
+		 * Scanner keyboard = keyboard;
 		 * System.out.printf("\nEnter the file name path: "); String fname =
 		 * keyboard.nextLine(); keyboard.close();
 		 */
 		CreateAuto a1 = new BuildAuto();
-		a1.buildAuto("/home/enea/Documents/Java Workspace/Lab 3/src/Mazda Protege5", "");
-		a1.buildAuto("/home/enea/Documents/Java Workspace/Lab 3/src/Ford Wagon", "");
+		a1.buildAuto("/home/enea/Documents/Java Workspace/Lab 3/src/Mazda Protege5");
+		a1.buildAuto("/home/enea/Documents/Java Workspace/Lab 3/src/Ford Wagon");
 
 		// the option set name "Color" will be updated to "NewColor"
 		// the price will be updated from $400 to $99.99
