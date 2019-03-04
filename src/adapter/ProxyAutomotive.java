@@ -47,10 +47,8 @@ public abstract class ProxyAutomotive {
 			arrlist = new ArrayList<String>();
 			for (String s : a.keySet())
 				arrlist.add(s);
-
 			return arrlist;
 		}
-
 	}
 
 	public void buildAuto(String fname) {
@@ -118,7 +116,6 @@ public abstract class ProxyAutomotive {
 
 			return arrlist;
 		}
-
 	}
 
 	public void operation(int opnum, int threadNo, ArrayList<String> input) {

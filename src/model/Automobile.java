@@ -120,7 +120,6 @@ public class Automobile implements Serializable {
 	}
 
 	public void setOption(int opset, int op, String name, float price) {
-
 		this.opSet.get(opset).getOp().get(op).setName(name);
 		this.opSet.get(opset).getOp().get(op).setPrice(price);
 	}
