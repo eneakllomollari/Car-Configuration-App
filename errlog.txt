@@ -1,4 +1,0 @@
-[06/12/18 18:18:07] IO Exception
-[06/12/18 18:19:34] IO Exception
-[06/12/18 18:19:58] IO Exception
-[06/12/18 18:21:44] IO Exception
