@@ -19,7 +19,7 @@ public class Driver4 {
 		System.out.printf(
 				"\t\t\tWelcome to your garage!\n\t\t\nYour cars are shown below!\n\t1.Ford Focus Wagon ZTW\n\t2.Mazda Protege 5\nPlease enter your choice(1 or 2): ");
 		int carch = Integer.parseInt(keyboard.nextLine());
-		int opchoice;
+		int opchoice = 0;
 		do {
 			ArrayList<String> in = new ArrayList<String>();
 			switch (carch) {
@@ -35,7 +35,7 @@ public class Driver4 {
 				break;
 			default:
 				System.out.printf("Invalid choice %d", carch);
-				break;
+				continue;
 			}
 			System.out.printf(
 					"\nPlease choose between the operations below:\n\t1.Print Auto\n\t2.Print Car Price\n\t3.Print Option Choice\n\t4.Print Option Price\n\t5.Update Option Price\n\t6.Choose Option\n\t7.Update Option Set Name\n\t0.Exit\nPlease enter your choice: ");
