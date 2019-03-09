@@ -9,6 +9,7 @@ public class Driver1 {
 	public static void main(String[] args) {
 		FileIO fileIO = new FileIO();
 		Scanner keyboard = new Scanner(System.in);
+;
 
 		try {
 			System.out.print("\nEnter the path of the file that contains the data: ");

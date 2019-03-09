@@ -7,9 +7,9 @@ import java.net.Socket;
 public class Server {
 	private ServerSocket serversocket;
 
-	public Server() {
+	public Server(int portno) {
 		try {
-			serversocket = new ServerSocket(8080);
+			serversocket = new ServerSocket(portno);
 			System.out.println("Server is now running and waiting for connections\n");
 		} catch (IOException e) {
 			System.out.println("Server is already running\n");

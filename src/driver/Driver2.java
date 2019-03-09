@@ -7,6 +7,12 @@ import adapter.UpdateAuto;
 public class Driver2 {
 
 	public static void main(String[] args) {
+
+		/*
+		 * Scanner keyboard = keyboard;
+		 * System.out.printf("\nEnter the file name path: "); String fname =
+		 * keyboard.nextLine(); keyboard.close();
+		 */
 		CreateAuto a1 = new BuildAuto();
 		a1.buildAuto("/home/enea/Documents/Java Workspace/Lab 3/src/Mazda Wagon");
 		a1.printAuto("Mazda Focus", "Wagon ZTW", "2003");

@@ -22,7 +22,6 @@ public abstract class ProxyAutomotive {
 	public int getAutoSize() {
 		return a.size();
 	}
-
 	public Automobile getAuto(String s) {
 		return a.get(s);
 	}
@@ -45,10 +44,13 @@ public abstract class ProxyAutomotive {
 			return arrlist;
 		} else {
 			arrlist = new ArrayList<String>();
-			for (String s : a.keySet())
+			Set<String> set = a.keySet();
+			for (String s : set)
 				arrlist.add(s);
+
 			return arrlist;
 		}
+
 	}
 
 	public void buildAuto(String fname) {
@@ -102,20 +104,6 @@ public abstract class ProxyAutomotive {
 	public void printOptionPrice(String make, String model, String year, String option) {
 		System.out.printf("The price of your %s is $%.2f!\n", option,
 				a.get(make + model + year).getOptionChoicePrice(option));
-	}
-
-	public static ArrayList<String> getModels() {
-		ArrayList<String> arrlist = null;
-		if (a.size() == 0) {
-			return arrlist;
-		} else {
-			arrlist = new ArrayList<String>();
-			Set<String> set = a.keySet();
-			for (String s : set)
-				arrlist.add(s);
-
-			return arrlist;
-		}
 	}
 
 	public void operation(int opnum, int threadNo, ArrayList<String> input) {
