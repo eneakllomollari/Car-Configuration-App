@@ -1,0 +1,63 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ClientDriver<Car-Configuration-App>",
+            "request": "launch",
+            "mainClass": "client.ClientDriver",
+            "projectName": "Car-Configuration-App"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Driver1<Car-Configuration-App>",
+            "request": "launch",
+            "mainClass": "driver.Driver1",
+            "projectName": "Car-Configuration-App"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Driver2<Car-Configuration-App>",
+            "request": "launch",
+            "mainClass": "driver.Driver2",
+            "projectName": "Car-Configuration-App"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Driver3<Car-Configuration-App>",
+            "request": "launch",
+            "mainClass": "driver.Driver3",
+            "projectName": "Car-Configuration-App"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Driver4<Car-Configuration-App>",
+            "request": "launch",
+            "mainClass": "driver.Driver4",
+            "projectName": "Car-Configuration-App"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Driver5<Car-Configuration-App>",
+            "request": "launch",
+            "mainClass": "driver.Driver5",
+            "projectName": "Car-Configuration-App"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ServerDriver<Car-Configuration-App>",
+            "request": "launch",
+            "mainClass": "server.ServerDriver",
+            "projectName": "Car-Configuration-App"
+        }
+    ]
+}

@@ -9,8 +9,8 @@ public class Driver4 {
 
 	public static void main(String[] args) {
 		Scanner keyboard = new Scanner(System.in);
-		String fname1 = "/home/enea/Documents/Java Workspace/Lab 3/src/Mazda Protege5";
-		String fname2 = "/home/enea/Documents/Java Workspace/Lab 3/src/Ford Wagon";
+		String fname1 = "/home/enea/Desktop/Car-Configuration-App/Mazda-Protege5";
+		String fname2 = "/home/enea/Desktop/Car-Configuration-App/Ford-Wagon";
 		CreateAuto ca = new BuildAuto();
 		ca.buildAuto(fname2);
 		ca.buildAuto(fname1);

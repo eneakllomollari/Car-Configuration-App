@@ -14,8 +14,8 @@ public class Driver3 {
 		 * keyboard.nextLine(); keyboard.close();
 		 */
 		CreateAuto a1 = new BuildAuto();
-		a1.buildAuto("/home/enea/Documents/Java Workspace/Lab 3/src/Mazda Protege5");
-		a1.buildAuto("/home/enea/Documents/Java Workspace/Lab 3/src/Ford Wagon");
+		a1.buildAuto("/home/enea/Desktop/Car-Configuration-App/Mazda-Protege5");
+		a1.buildAuto("/home/enea/Desktop/Car-Configuration-App/Ford-Wagon");
 
 		// the option set name "Color" will be updated to "NewColor"
 		// the price will be updated from $400 to $99.99
