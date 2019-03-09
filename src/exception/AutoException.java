@@ -67,26 +67,46 @@ public class AutoException extends Exception implements FixAuto {
 		Fix1to20 f1 = new Fix1to20();
 
 		switch (errorno) {
-			case 1: return f1.fix1(errorno);
-			case 2: return f1.fix2(errorno);
-			case 3: return f1.fix3(errorno);
-			case 4: return f1.fix4(errorno);
-			case 5: return f1.fix5(errorno);
-			case 6: return f1.fix6(errorno);
-			case 7: return f1.fix7(errorno);
-			case 8: return f1.fix8(errorno);
-			case 9: return f1.fix9(errorno);
-			case 10: return f1.fix10(errorno);
-			case 11: return f1.fix11(errorno);
-			case 12: return f1.fix12(errorno);
-			case 13: return f1.fix13(errorno);
-			case 14: return f1.fix14(errorno);
-			case 15: return f1.fix15(errorno);
-			case 16: return f1.fix16(errorno);
-			case 17: return f1.fix17(errorno);
-			case 18: return f1.fix18(errorno);
-			case 19: return f1.fix19(errorno);
-			case 20: return f1.fix20(errorno);
+		case 1:
+			return f1.fix1(errorno);
+		case 2:
+			return f1.fix2(errorno);
+		case 3:
+			return f1.fix3(errorno);
+		case 4:
+			return f1.fix4(errorno);
+		case 5:
+			return f1.fix5(errorno);
+		case 6:
+			return f1.fix6(errorno);
+		case 7:
+			return f1.fix7(errorno);
+		case 8:
+			return f1.fix8(errorno);
+		case 9:
+			return f1.fix9(errorno);
+		case 10:
+			return f1.fix10(errorno);
+		case 11:
+			return f1.fix10(errorno);
+		case 12:
+			return f1.fix10(errorno);
+		case 13:
+			return f1.fix10(errorno);
+		case 14:
+			return f1.fix10(errorno);
+		case 15:
+			return f1.fix10(errorno);
+		case 16:
+			return f1.fix10(errorno);
+		case 17:
+			return f1.fix10(errorno);
+		case 18:
+			return f1.fix10(errorno);
+		case 19:
+			return f1.fix10(errorno);
+		case 20:
+			return f1.fix10(errorno);
 		}
 		return null;
 	}

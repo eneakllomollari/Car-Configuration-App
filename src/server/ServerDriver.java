@@ -21,6 +21,6 @@ public class ServerDriver {
 		as.addAutoToLHM(props[0]);
 		as.addAutoToLHM(props[1]);
 
-		new Server().run();
+		new Server(4444).run();
 	}
 }

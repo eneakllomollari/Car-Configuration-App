@@ -121,10 +121,12 @@ public class FileIO {
 	/**
 	 * Initializes the Automobile object with the general data
 	 * 
-	 * @param l the line that hold the data to be used for initializing separated by
-	 *          delimiter ","
-	 * @param a the Automobile object that will be assigned with the data in the
-	 *          line
+	 * @param l
+	 *            the line that hold the data to be used for initializing separated
+	 *            by delimiter ","
+	 * @param a
+	 *            the Automobile object that will be assigned with the data in the
+	 *            line
 	 * @throws AutoException
 	 * 
 	 */
@@ -159,11 +161,14 @@ public class FileIO {
 	/**
 	 * Initializes the Automobile object with the right OptionSet
 	 * 
-	 * @param index the index of the option set object that has be built inside the
-	 *              Automobile object
-	 * @param l     the line that hold the data with the size of the name of the
-	 *              option set
-	 * @param a     the automotive object that will be assigned the data of the line
+	 * @param index
+	 *            the index of the option set object that has be built inside the
+	 *            Automobile object
+	 * @param l
+	 *            the line that hold the data with the size of the name of the
+	 *            option set
+	 * @param a
+	 *            the automotive object that will be assigned the data of the line
 	 */
 	private void buildoptionset(int index, String l, Automobile a) {
 		StringTokenizer tok = new StringTokenizer(l);
@@ -176,13 +181,17 @@ public class FileIO {
 	/**
 	 * Initializes the Automobile object with the Option properties
 	 * 
-	 * @param optionsetindex the index of the option set inside the auto object that
-	 *                       is to be build
-	 * @param optionindex    the index of the option object inside the optionset
-	 *                       object, which is inside the automotive object
-	 * @param l              the line that contains the name and price of the option
-	 *                       separated by a comma "," delimiter
-	 * @param a              the automotive object that is to be initialized
+	 * @param optionsetindex
+	 *            the index of the option set inside the auto object that is to be
+	 *            build
+	 * @param optionindex
+	 *            the index of the option object inside the optionset object, which
+	 *            is inside the automotive object
+	 * @param l
+	 *            the line that contains the name and price of the option separated
+	 *            by a comma "," delimiter
+	 * @param a
+	 *            the automotive object that is to be initialized
 	 */
 	private void buildoption(int optionsetindex, int optionindex, String l, Automobile a) {
 		StringTokenizer tokenizer = new StringTokenizer(l);

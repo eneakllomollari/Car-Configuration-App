@@ -7,16 +7,16 @@ import util.FileIO;
 public class Driver1 {
 
 	public static void main(String[] args) {
-		FileIO fileIO = new FileIO();
 		Scanner keyboard = new Scanner(System.in);
+		FileIO fileIO = new FileIO();
 
 		try {
-			System.out.print("\nEnter the path of the file that contains the data: ");
-			String fname = keyboard.nextLine();
+			// System.out.print("\nEnter the path of the file that contains the data: ");
+			// String fname = keyboard.nextLine();
 			keyboard.close();
 
 			// build the auto object
-			Automobile a = fileIO.buildAuto(fname);
+			Automobile a = fileIO.buildAuto("/home/enea/Desktop/Car-Configuration-App/Mazda-Protege5");
 
 			// print the auto object before serializing
 			System.out.printf("\nBefore serializing!\n");

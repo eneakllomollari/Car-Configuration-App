@@ -39,13 +39,13 @@ public class EditOption extends ProxyAutomotive implements Runnable, GlobalCons 
 	}
 
 	/*
-	 * opnum = 1 print auto input = make, model, year 
-	 * opnum = 2 print car price input = make, model, year 
-	 * opnum = 3 print option choice input = make, model,year, optionset 
-	 * opnum = 4 print option price input = make, model, year, optionset 
-	 * opnum = 5 update option price input = make, model, year, optionname, newprice 
-	 * opnum = 6 choose option input = make, model, year, optionset, option 
-	 * opnum = 7 update option set name input = make, model, year,optionsetname, newname
+	 * opnum = 1 print auto input = make, model, year opnum = 2 print car price
+	 * input = make, model, year opnum = 3 print option choice input = make,
+	 * model,year, optionset opnum = 4 print option price input = make, model, year,
+	 * optionset opnum = 5 update option price input = make, model, year,
+	 * optionname, newprice opnum = 6 choose option input = make, model, year,
+	 * optionset, option opnum = 7 update option set name input = make, model,
+	 * year,optionsetname, newname
 	 */
 	synchronized public void ops(int opnum, ArrayList<String> input) throws AutoException {
 		String make = input.get(0);
